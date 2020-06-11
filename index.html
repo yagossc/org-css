@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-06-11 Thu 04:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Org-css</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="yago" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<span>Preamble set with: (customize-set-variable 'org-html-preamble Preamble - Navigation Bar (propably))</span>
+</div>
+<div id="content">
+<h1 class="title">Org-css
+<br />
+<span class="subtitle">Org mode meets minimal CSS styling</span>
+</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org80b3b4b">Welcome to Org-css.</a>
+<ul>
+<li><a href="#org87b3cf6">Learn more</a></li>
+</ul>
+</li>
+<li><a href="#org84738ff">Org-css supports&#x2026;</a>
+<ul>
+<li><a href="#orga72ad7e">Ordered lists</a></li>
+<li><a href="#org5f25c57">Unordered lists</a></li>
+<li><a href="#org88b4376">Links</a></li>
+<li><a href="#org1ba3bc0">Images(Which are responsive!)</a></li>
+<li><a href="#org655f437">Tables(Which are responsive!)</a></li>
+<li><a href="#org3b2a9b9">Latex</a></li>
+<li><a href="#org1de46c3">Code</a></li>
+<li><a href="#orgb3120ae">Quotes</a></li>
+<li><a href="#org5c7c881">Checkboxes</a></li>
+<li><a href="#orga9b4505"><span class="todo TODO">TODO</span> An item that needs done</a></li>
+<li><a href="#orgb407319"><span class="done DONE">DONE</span> An item that is done</a></li>
+<li><a href="#orgfa9a616">Tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tag1">tag1</span>&#xa0;<span class="tag2">tag2</span></span></a></li>
+<li><a href="#org089536f">Font styling</a></li>
+</ul>
+</li>
+<li><a href="#org78a96f5">Example Text</a>
+<ul>
+<li><a href="#org835855e">Example 1</a></li>
+<li><a href="#orgd50d4a0">Example 2</a></li>
+</ul>
+</li>
+<li><a href="#org640db6d">First level text</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org80b3b4b" class="outline-2">
+<h2 id="org80b3b4b">Welcome to Org-css.</h2>
+<div class="outline-text-2" id="text-org80b3b4b">
+<p>
+Org-css is a css theme targeted at org mode. Org-css was inspired by <a href="https://jessekelly881-imagine.surge.sh/">Imagine</a>.
+</p>
+
+<p>
+Org-css is available on Github <a href="https://github.com/yagossc/org-css">here</a>. To use org-css add the following headers to your org document:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #969696;">#+HTML_HEAD: &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</span>
+<span style="color: #969696;">#+OPTIONS: toc:nil num:nil html-style:nil</span>
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org87b3cf6" class="outline-3">
+<h3 id="org87b3cf6">Learn more</h3>
+<div class="outline-text-3" id="text-org87b3cf6">
+<p>
+To learn more about Org-css and what I do feel free to check out my
+<a href="https://yagossc.github.io/">blog</a> or my <a href="https://github.com/yagossc/">github.</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org84738ff" class="outline-2">
+<h2 id="org84738ff">Org-css supports&#x2026;</h2>
+<div class="outline-text-2" id="text-org84738ff">
+</div>
+<div id="outline-container-orga72ad7e" class="outline-3">
+<h3 id="orga72ad7e">Ordered lists</h3>
+<div class="outline-text-3" id="text-orga72ad7e">
+<ol class="org-ol">
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org5f25c57" class="outline-3">
+<h3 id="org5f25c57">Unordered lists</h3>
+<div class="outline-text-3" id="text-org5f25c57">
+<ul class="org-ul">
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org88b4376" class="outline-3">
+<h3 id="org88b4376">Links</h3>
+<div class="outline-text-3" id="text-org88b4376">
+<p>
+<a href="https://www.jessekelly.tk">jessekelly.tk</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1ba3bc0" class="outline-3">
+<h3 id="org1ba3bc0">Images(Which are responsive!)</h3>
+<div class="outline-text-3" id="text-org1ba3bc0">
+
+<div id="org34b98be" class="figure">
+<p><img src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200505183733/Cyberpunk-2077-No-Vacancy-e1570482474134-800x450.jpg" alt="Cyberpunk-2077-No-Vacancy-e1570482474134-800x450.jpg" />
+</p>
+<p><span class="figure-number">Figure 1: </span>This is the caption for the next figure link (or table)</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org655f437" class="outline-3">
+<h3 id="org655f437">Tables(Which are responsive!)</h3>
+<div class="outline-text-3" id="text-org655f437">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">N</th>
+<th scope="col" class="org-right">N<sup>2</sup></th>
+<th scope="col" class="org-right">N<sup>3</sup></th>
+<th scope="col" class="org-right">N<sup>4</sup></th>
+<th scope="col" class="org-right">sqrt(n)</th>
+<th scope="col" class="org-right">sqrt[4](N)</th>
+<th scope="col" class="org-right">Sum</th>
+<th scope="col" class="org-right">Doubled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">6</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">4</td>
+<td class="org-right">8</td>
+<td class="org-right">16</td>
+<td class="org-right">1.4142</td>
+<td class="org-right">1.1892</td>
+<td class="org-right">32.6034</td>
+<td class="org-right">65.2068</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">9</td>
+<td class="org-right">27</td>
+<td class="org-right">81</td>
+<td class="org-right">1.7321</td>
+<td class="org-right">1.3161</td>
+<td class="org-right">123.0482</td>
+<td class="org-right">246.0964</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org3b2a9b9" class="outline-3">
+<h3 id="org3b2a9b9">Latex</h3>
+<div class="outline-text-3" id="text-org3b2a9b9">
+<p>
+\[\int_{a}^{b} x^2 dx\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1de46c3" class="outline-3">
+<h3 id="org1de46c3">Code</h3>
+<div class="outline-text-3" id="text-org1de46c3">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #a88654;">def</span> <span style="color: #5476a8;">fact</span>(n):
+    <span style="color: #00ff00;">"Returns the factorial of a number"</span>
+    <span style="color: #a88654;">if</span>(n &lt;= 1): <span style="color: #a88654;">return</span> 1
+    <span style="color: #a88654;">else</span>: <span style="color: #a88654;">return</span> n*fact(n-1)
+
+<span style="color: #a88654;">print</span>(fact(3))
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb3120ae" class="outline-3">
+<h3 id="orgb3120ae">Quotes</h3>
+<div class="outline-text-3" id="text-orgb3120ae">
+<blockquote>
+<p>
+Insanity: doing the same thing over and over again and expecting different results.
+</p>
+
+<p>
+Albert Einstein
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org5c7c881" class="outline-3">
+<h3 id="org5c7c881">Checkboxes</h3>
+<div class="outline-text-3" id="text-org5c7c881">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Checked</li>
+<li class="off"><code>[&#xa0;]</code> Unchecked</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga9b4505" class="outline-3">
+<h3 id="orga9b4505"><span class="todo TODO">TODO</span> An item that needs done</h3>
+</div>
+<div id="outline-container-orgb407319" class="outline-3">
+<h3 id="orgb407319"><span class="done DONE">DONE</span> An item that is done</h3>
+</div>
+<div id="outline-container-orgfa9a616" class="outline-3">
+<h3 id="orgfa9a616">Tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tag1">tag1</span>&#xa0;<span class="tag2">tag2</span></span></h3>
+</div>
+<div id="outline-container-org089536f" class="outline-3">
+<h3 id="org089536f">Font styling</h3>
+<div class="outline-text-3" id="text-org089536f">
+<p>
+<b>Bold</b> <i>italic</i> <span class="underline">underlined</span> <code>verbatim</code> <code>code</code> <del>strike-through</del>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org78a96f5" class="outline-2">
+<h2 id="org78a96f5">Example Text</h2>
+<div class="outline-text-2" id="text-org78a96f5">
+</div>
+<div id="outline-container-org835855e" class="outline-3">
+<h3 id="org835855e">Example 1</h3>
+<div class="outline-text-3" id="text-org835855e">
+<p>
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  Fusce sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien.
+</p>
+
+<p>
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  Fusce sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgd50d4a0" class="outline-3">
+<h3 id="orgd50d4a0">Example 2</h3>
+<div class="outline-text-3" id="text-orgd50d4a0">
+<p>
+Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
+consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+</p>
+
+<p>
+felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+sit amet elit.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org640db6d" class="outline-2">
+<h2 id="org640db6d">First level text</h2>
+<div class="outline-text-2" id="text-org640db6d">
+<p>
+Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
+consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+</p>
+
+<p>
+felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+sit amet elit.
+</p>
+
+<p>
+Fusce commodo.Vestibulum convallis, lorem a tempus semper, dui dui
+euismod elit, e vitae placerat urna tortor vitae lacus.  Nullam libero
+mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis
+tincidunt.
+</p>
+
+
+<div id="org1f95bf7" class="figure">
+<p><img src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200505183733/Cyberpunk-2077-No-Vacancy-e1570482474134-800x450.jpg" alt="Cyberpunk-2077-No-Vacancy-e1570482474134-800x450.jpg" />
+</p>
+<p><span class="figure-number">Figure 2: </span>This is the caption for the next figure link (or table)</p>
+</div>
+
+
+<p>
+This is propabily what a post will most likely look like. Vestibulum
+convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat
+urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius
+et, dictum id, arcu.  Mauris mollis tincidunt.
+</p>
+
+<p>
+Here's some pseudo code with C syntax highlighting:
+</p>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #7d71a8;">def</span> <span style="color: #5476a8;">fact</span>(n):
+    <span style="color: #ff0000;">"Returns the factorial of a number"</span>
+    <span style="color: #a88654;">if</span>(n &lt;= 1): <span style="color: #a88654;">return</span> 1
+    <span style="color: #a88654;">else</span>: <span style="color: #a88654;">return</span> n*fact(n-1)
+
+<span style="color: #5476a8;">print</span>(fact(3))
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<span>Footer set with: (customize-set-variable 'org-html-postamble content)</span>
+</div>
+</body>
+</html>
