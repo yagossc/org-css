@@ -125,7 +125,7 @@ pre{
     .outline-text-2, #table-of-contents{
         padding: 0vh 10vw;
     }
-    #content{
+    #content, .title{
         margin-left: 4rem;
         margin-right: 4rem;
     }
@@ -189,6 +189,7 @@ tr:nth-child(even) {
 
 .title{
     padding: 2vh 5vw;
+    font-size: 3rem;
 }
 
 pre{
