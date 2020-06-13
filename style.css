@@ -27,7 +27,7 @@ h4{margin-top: 1rem; margin-bottom: 1rem;}
 /* ------------------------- */
 
 ::selection {
-    background-color: purple;
+    background-color: #1a71ab;
     color: white;
 }
 
@@ -145,7 +145,7 @@ pre{
 
 
 blockquote{
-    border-left: 0.2rem solid purple;
+    border-left: 0.2rem solid #1a71ab;
     padding-left: 1rem;
     font-style: italic;
 }
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6{
 .tag > span{
     font-weight: 400;
     font-size: 0.6rem;
-    background-color: purple;
+    background-color: #1a71ab;
     text-transform: uppercase;
     border-radius: 2px;
     width: fit-content;
@@ -199,15 +199,15 @@ pre{
 }
 
 .org-org-meta-line{
-    color: purple;
+    color: #1a71ab;
 }
 
 .org-keyword{
-    color: purple;
+    color: #1a71ab;
 }
 
 a{
-    color: purple;
+    color: #1a71ab;
 }
 
 .underline{
@@ -220,7 +220,7 @@ a{
 }
 
 .done{
-    color: purple;
+    color: #1a71ab;
     font-weight: 400;
 }
 
