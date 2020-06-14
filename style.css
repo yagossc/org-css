@@ -36,7 +36,6 @@ html, body{
     font-weight: 300;
 }
 
-
 h1{font-size: var(--font-size-1);}
 h2{font-size: var(--font-size-2);}
 h3{font-size: var(--font-size-3);}
@@ -125,7 +124,7 @@ pre{
     .outline-text-2, #table-of-contents{
         padding: 0vh 10vw;
     }
-    #content, .title{
+    #content{
         margin-left: 4rem;
         margin-right: 4rem;
     }

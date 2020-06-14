@@ -34,7 +34,7 @@ To learn more about Org-css and what I do feel free to check out my
    - C
 
 ** Links
-   [[https://www.jessekelly.tk][jessekelly.tk]]
+   [[https://www.google.com][Google]]
 
 
 ** Images(Which are responsive!)
