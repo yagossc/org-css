@@ -21,7 +21,7 @@ html, body{
 }
 
 /* Header margin */
-h2{margin-top: 2rem; margin-bottom: 1.5rem;}
+h2{margin-top: 3rem; margin-bottom: 2.5rem;}
 h3{margin-top: 1rem; margin-bottom: 1rem;}
 h4{margin-top: 1rem; margin-bottom: 1rem;}
 
@@ -109,7 +109,12 @@ pre{
         padding: 2vh 10vw;
     }
 
-    .outline-2 > h2, .outline-3{
+    .outline-2 > h2 {
+        margin: 2vh 10vw;
+        margin-top: 4vh;
+    }
+
+    .outline-3{
         margin: 0vh 10vw;
     }
 
@@ -129,7 +134,12 @@ pre{
         margin: 2vh 5vw;
     }
 
-    .outline-2 > h2, .outline-3{
+    .outline-2 > h2{
+        margin: 2vh 5vw;
+        margin-top: 4vh;
+    }
+
+    .outline-3{
         margin: 0vh 5vw;
     }
 
