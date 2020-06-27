@@ -36,7 +36,6 @@ To learn more about Org-css and what I do feel free to check out my
 ** Links
    [[https://www.google.com][Google]]
 
-
 ** Images(Which are responsive!)
 
    #+CAPTION: This is the caption for the next figure link (or table)
