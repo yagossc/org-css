@@ -17,7 +17,7 @@
 
 ** Learn more
 
-To learn more about Org-css and what I do feel free to check out my
+To learn more about Org-css and  feel free to check out my
 [[https://yagossc.github.io/][blog]] or my [[https://github.com/yagossc/][github.]]
 
 * Org-css supports...
@@ -84,6 +84,7 @@ Albert Einstein
 ** TODO An item that needs done
 ** DONE An item that is done
 ** Tags                                                               :tag1:tag2:
+*** More tags :tag3:
 ** Font styling
 *Bold* /italic/ _underlined_ =verbatim= ~code~ +strike-through+
 
